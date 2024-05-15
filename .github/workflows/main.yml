@@ -35,6 +35,7 @@ jobs:
           script: |
             cd /home/ec2-user/project
             export OPENAI_API_KEY=$(aws ssm get-parameter --name "/suerte-botender/OPENAI_API_KEY" --with-decryption --region ${{ env.AWS_REGION }} --query "Parameter.Value" --output text)
+            echo "OPENAI_API_KEY=$OPENAI_API_KEY" >> .env
             npm install
             sh scripts/ec2env.sh
             npm run db:import
