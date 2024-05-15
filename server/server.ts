@@ -9,7 +9,7 @@ import {
 } from './lib/index.js';
 import OpenAI from 'openai';
 
-const openai = new OpenAI();
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const app = express();
 
