@@ -12,7 +12,7 @@ A React and TypeScript application that utilizes the ChatGPT API to create uniqu
 
 ## Live Demo
 
-Try the application live at: 
+Try the application live at: https://www.suertebotender.com/
 
 ## Features
 
